@@ -1,0 +1,21 @@
+{
+  "name": "property-voice-server",
+  "version": "1.0.0",
+  "description": "Express + Socket.IO backend for Property Voice AI — streaming GPT-4o, emotion, scoring, TTS",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --watch index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.52.7",
+    "socket.io": "^4.7.5",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

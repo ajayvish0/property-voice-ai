@@ -1,0 +1,31 @@
+{
+  "name": "property-voice-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time voice AI negotiation trainer — practice closing property deals against an emotionally adaptive GPT-4o seller persona.",
+  "author": "Portfolio Project",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix client",
+    "dev": "npm run dev:server",
+    "dev:server": "npm run dev --prefix backend",
+    "dev:client": "npm run dev --prefix client",
+    "start:server": "npm start --prefix backend",
+    "build:client": "npm run build --prefix client",
+    "preview:client": "npm run preview --prefix client"
+  },
+  "keywords": [
+    "voice-ai",
+    "openai",
+    "gpt-4o",
+    "socket.io",
+    "real-estate",
+    "negotiation",
+    "speech-recognition",
+    "react",
+    "express"
+  ]
+}
