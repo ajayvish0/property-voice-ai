@@ -1,0 +1,22 @@
+# Backend → Render (Web Service from GitHub)
+services:
+  - type: web
+    name: property-voice-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: TTS_ENGINE
+        value: browser
+      - key: USE_MOCK_AI
+        value: "false"
+      - key: RATE_LIMIT_PER_IP
+        value: "30"
+      - key: MAX_TURNS_PER_SESSION
+        value: "20"
